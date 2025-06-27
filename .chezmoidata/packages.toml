@@ -1,2 +1,48 @@
 [pacman]
-pkgs = ["git-delta"]
+pkgs = [
+  # WM
+  "hyprland",
+  "waybar",
+  "rofi",
+
+  # Text editors
+  "helix",
+  "vi",
+  "vim",
+  "neovim",
+  "helix",
+  "zed",
+
+  # Languages
+  "rustup",
+
+  # terminal tools
+  "kitty",
+  "bat",
+  "git-delta",
+  "fish",
+
+  # gui utils
+  "firefox",
+  "vlc",
+  "thunar",
+
+  # audio
+  "pipewire",
+  "wireplumber",
+  "pipewire-audio",
+  "pipewire-alsa",
+  "pipewire-pulse",
+
+  # Bluetooth
+  "blueman-manager",
+  "bluez",
+  "bluetoothctl",
+
+  "base-devel",
+  "",
+
+]
+aur_pkgs = [
+  "pwvucontrol",
+]

@@ -1,3 +1,22 @@
 #!/bin/sh
 
-sudo pacman -Sy --needed {{ .pacman.pkgs  | join " " }}
+
+# ROOT START
+sudo su
+pacman -Sy --needed {{ .pacman.pkgs  | join " " }}
+
+# make sure bluetooth is on
+systemctl enable --now bluetooth
+
+# ROOT END
+exit
+
+
+
+if ! command -v yay ; then # if we have no yay we grab
+  git clone https://aur.archlinux.org/yay-bin.git
+  cd yay-bin
+  makepkg -si
+fi
+
+yay -Sy --needed {{ .pacman.aur_pkgs  | join " " }}
