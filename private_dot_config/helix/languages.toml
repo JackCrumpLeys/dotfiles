@@ -1,0 +1,7 @@
+[[language]]
+name = "json"
+language-servers = ["vscode-json-languageserver"]
+
+
+[language-server.rust-analyzer.config]
+check.command = "clippy"

@@ -1,0 +1,9 @@
+theme = "vim_dark_high_contrast"
+
+
+[editor.soft-wrap]
+enable = true
+
+ [keys.select]
+"{" = "goto_prev_paragraph"
+"}" = "goto_next_paragraph" 
